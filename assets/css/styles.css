@@ -442,41 +442,44 @@ h2{
   .nav__list.is-open{ display:flex; }
 }
 
-/* ===== Logo fondo borroso premium ===== */
+/* ===== Logo fondo borroso (fix) ===== */
 
-body::before {
-  content: "";
+body{
+  position: relative;
+  isolation: isolate; /* evita problemas de capas */
+}
+
+body::before{
+  content:"";
   position: fixed;
   inset: 0;
-
-  background: url("../img/logo.jpg") center / 520px no-repeat;
-
-  opacity: 0.10;
+  background: url("../img/logo.jpg") center/520px no-repeat;
+  opacity: 0.30;
   filter: blur(60px);
-
-  z-index: -1;
+  z-index: 0;          /* <- NO negativo */
   pointer-events: none;
 }
 
-/* Glow adicional para estilo tech */
-body::after {
-  content: "";
+body::after{
+  content:"";
   position: fixed;
   inset: 0;
-
-  background: radial-gradient(
-    circle at center,
-    rgba(179, 92, 255, 0.15),
-    transparent 60%
-  );
-
-  z-index: -2;
+  background: radial-gradient(circle at center, rgba(179,92,255,0.15), transparent 70%);
+  z-index: 0;          /* <- NO negativo */
   pointer-events: none;
 }
 
-/* Ajuste para móvil */
-@media (max-width: 768px) {
-  body::before {
+/* Mantén el contenido por encima del fondo */
+.header,
+.hero,
+.section,
+.footer{
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px){
+  body::before{
     background-size: 320px;
     filter: blur(50px);
   }
