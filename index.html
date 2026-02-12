@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Visualize Studio | Portafolio de Marketing Digital: Contenido, Ads y Community Management con resultados." />
+  <title>Visualize Studio | Portafolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- Background glows -->
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="inicio">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <img class="brand__logo" src="assets/img/logo.png" alt="Visualize Studio" onerror="this.style.display='none'">
+        <span class="brand__text">Visualize Studio<span class="brand__dot">.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav__list" id="navList">
+          <li><a href="#casos">Casos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#reels">Reels</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contacto" class="btn btn--sm">Agendar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">Marketing Digital • COL | US • Equipo de 5</p>
+          <h1>Contenido que atrae, anuncios que convierten y comunidad que retiene.</h1>
+          <p class="lead">
+            Somos una agencia boutique. Hoy gestionamos <strong>5 clientes activos</strong> y hemos trabajado con
+            <strong>+10 empresas</strong> creando contenido, performance ads y community management con enfoque en resultados.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#contacto">Agendar auditoría</a>
+            <a class="btn btn--ghost" href="#casos">Ver casos</a>
+          </div>
+
+          <div class="metrics">
+            <div class="metric">
+              <div class="metric__num">5</div>
+              <div class="metric__label">Clientes activos</div>
+            </div>
+            <div class="metric">
+              <div class="metric__num">+10</div>
+              <div class="metric__label">Empresas trabajadas</div>
+            </div>
+            <div class="metric">
+              <div class="metric__num">3</div>
+              <div class="metric__label">Servicios core</div>
+            </div>
+          </div>
+
+          <div class="trust">
+            <span class="muted">Trabajamos con:</span>
+            <div class="logos">
+              <img src="assets/img/client-1.png" alt="Logo cliente 1" onerror="this.style.display='none'">
+              <img src="assets/img/client-2.png" alt="Logo cliente 2" onerror="this.style.display='none'">
+              <img src="assets/img/client-3.png" alt="Logo cliente 3" onerror="this.style.display='none'">
+            </div>
+            <small class="muted">*Reemplaza los logos en <code>assets/img/</code>.</small>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="card media-card">
+            <img src="assets/img/hero.jpg" alt="Vista previa Visualize Studio" class="media-card__img"
+                 onerror="this.style.display='none'">
+            <div class="media-card__overlay">
+              <div class="media-card__badge">Portafolio 2026</div>
+              <div class="media-card__hint">Cambia esta imagen en <code>assets/img/hero.jpg</code></div>
+            </div>
+          </div>
+
+          <div class="floating">
+            <div class="chip">Contenido</div>
+            <div class="chip">Ads</div>
+            <div class="chip">Community</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Casos -->
+    <section class="section" id="casos">
+      <div class="container">
+        <div class="section__head">
+          <h2>Casos de éxito (formato rápido)</h2>
+          <p class="muted">
+            Aquí es donde más vas a cerrar clientes. Cada tarjeta está hecha para que solo reemplaces
+            imagen, métricas y link (si aplica).
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <!-- CASE 1 -->
+          <article class="case card">
+            <img class="case__img" src="assets/img/project-1.jpg" alt="Caso 1" onerror="this.style.display='none'">
+            <div class="case__body">
+              <div class="case__top">
+                <h3>Campaña de Ads – Leads</h3>
+                <span class="tag">Meta Ads</span>
+              </div>
+
+              <p class="muted">
+                <strong>Reto:</strong> aumentar leads con CPL estable.<br>
+                <strong>Solución:</strong> creativo + segmentación + optimización semanal.
+              </p>
+
+              <div class="kpis">
+                <div class="kpi"><span class="kpi__num">+120%</span><span class="kpi__label">Leads</span></div>
+                <div class="kpi"><span class="kpi__num">-35%</span><span class="kpi__label">CPL</span></div>
+                <div class="kpi"><span class="kpi__num">4.2x</span><span class="kpi__label">ROAS</span></div>
+              </div>
+
+              <div class="case__actions">
+                <a class="btn btn--ghost btn--sm" href="#contacto">Quiero algo así</a>
+                <a class="link" href="#" aria-disabled="true" title="Opcional: link a landing / post / pdf">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CASE 2 -->
+          <article class="case card">
+            <img class="case__img" src="assets/img/project-2.jpg" alt="Caso 2" onerror="this.style.display='none'">
+            <div class="case__body">
+              <div class="case__top">
+                <h3>Contenido – Crecimiento</h3>
+                <span class="tag">Reels</span>
+              </div>
+
+              <p class="muted">
+                <strong>Reto:</strong> aumentar alcance y seguidores con contenido orgánico.<br>
+                <strong>Solución:</strong> guiones + grabación + edición + pauta ligera.
+              </p>
+
+              <div class="kpis">
+                <div class="kpi"><span class="kpi__num">+3.8x</span><span class="kpi__label">Alcance</span></div>
+                <div class="kpi"><span class="kpi__num">+1,2K</span><span class="kpi__label">Seguidores</span></div>
+                <div class="kpi"><span class="kpi__num">9.1%</span><span class="kpi__label">Engagement</span></div>
+              </div>
+
+              <div class="case__actions">
+                <a class="btn btn--ghost btn--sm" href="#reels">Ver reels</a>
+                <a class="link" href="#" aria-disabled="true">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CASE 3 -->
+          <article class="case card">
+            <img class="case__img" src="assets/img/project-3.jpg" alt="Caso 3" onerror="this.style.display='none'">
+            <div class="case__body">
+              <div class="case__top">
+                <h3>Community – Retención</h3>
+                <span class="tag">CM</span>
+              </div>
+
+              <p class="muted">
+                <strong>Reto:</strong> mejorar respuesta y confianza de la comunidad.<br>
+                <strong>Solución:</strong> guías de respuesta + calendario + reporting.
+              </p>
+
+              <div class="kpis">
+                <div class="kpi"><span class="kpi__num">-48%</span><span class="kpi__label">Tiempo respuesta</span></div>
+                <div class="kpi"><span class="kpi__num">+26%</span><span class="kpi__label">Mensajes</span></div>
+                <div class="kpi"><span class="kpi__num">+18%</span><span class="kpi__label">Recompra</span></div>
+              </div>
+
+              <div class="case__actions">
+                <a class="btn btn--ghost btn--sm" href="#contacto">Cotizar CM</a>
+                <a class="link" href="#" aria-disabled="true">Ver detalle</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Tip:</strong> Si aún no quieres mostrar nombres de clientes, deja “tipo de negocio”
+          (ej: “restaurante”, “ecommerce”, “servicios profesionales”) y métricas reales.
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section__head">
+          <h2>Servicios principales</h2>
+          <p class="muted">Ofrecemos 3 líneas claras para que el cliente entienda rápido qué compra.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card service">
+            <div class="service__icon">✦</div>
+            <h3>Contenido que vende</h3>
+            <p class="muted">Guiones, grabación, edición, parrilla y producción enfocada en conversión.</p>
+            <ul class="list">
+              <li>Reels / UGC / piezas estáticas</li>
+              <li>Calendario editorial</li>
+              <li>Optimización por desempeño</li>
+            </ul>
+          </article>
+
+          <article class="card service">
+            <div class="service__icon">⌁</div>
+            <h3>Ads (Meta & Google)</h3>
+            <p class="muted">Campañas con estructura sólida, creativos y optimización semanal.</p>
+            <ul class="list">
+              <li>Lead Gen / Ventas / Tráfico</li>
+              <li>Testing de creativos</li>
+              <li>Reportes claros (KPIs)</li>
+            </ul>
+          </article>
+
+          <article class="card service">
+            <div class="service__icon">◎</div>
+            <h3>Community Management</h3>
+            <p class="muted">Gestión de comunidad con protocolos, tono de marca y seguimiento.</p>
+            <ul class="list">
+              <li>Atención y moderación</li>
+              <li>Guías de respuesta</li>
+              <li>Insights para contenido y ads</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reels / Videos -->
+    <section class="section" id="reels">
+      <div class="container">
+        <div class="section__head">
+          <h2>Reels / Videos (solo sube tus MP4)</h2>
+          <p class="muted">Coloca tus videos en <code>assets/video/</code> y edita los nombres aquí. Listo.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card video">
+            <video controls preload="metadata" poster="assets/img/project-1.jpg">
+              <source src="assets/video/reel-1.mp4" type="video/mp4">
+              Tu navegador no soporta video HTML5.
+            </video>
+            <div class="video__meta">
+              <h3>Reel: Caso Ads</h3>
+              <p class="muted">Formato: hook + prueba + CTA.</p>
+            </div>
+          </article>
+
+          <article class="card video">
+            <video controls preload="metadata" poster="assets/img/project-2.jpg">
+              <source src="assets/video/reel-2.mp4" type="video/mp4">
+              Tu navegador no soporta video HTML5.
+            </video>
+            <div class="video__meta">
+              <h3>Reel: Contenido</h3>
+              <p class="muted">Antes/después + resultado.</p>
+            </div>
+          </article>
+
+          <article class="card video">
+            <video controls preload="metadata" poster="assets/img/project-3.jpg">
+              <source src="assets/video/reel-3.mp4" type="video/mp4">
+              Tu navegador no soporta video HTML5.
+            </video>
+            <div class="video__meta">
+              <h3>Reel: Community</h3>
+              <p class="muted">Proceso + resultados.</p>
+            </div>
+          </article>
+        </div>
+
+        <small class="muted">
+          Si no tienes un tercer video, elimina la tercera tarjeta o cambia <code>reel-3.mp4</code>.
+        </small>
+      </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="section" id="equipo">
+      <div class="container">
+        <div class="section__head">
+          <h2>Equipo (5 personas)</h2>
+          <p class="muted">Esta sección sube la confianza: muestra roles claros y expertise.</p>
+        </div>
+
+        <div class="grid grid--5">
+          <article class="card team">
+            <div class="avatar" aria-hidden="true"></div>
+            <h3>Strategy Lead</h3>
+            <p class="muted">Estrategia, funnels, KPIs.</p>
+          </article>
+          <article class="card team">
+            <div class="avatar" aria-hidden="true"></div>
+            <h3>Performance</h3>
+            <p class="muted">Meta/Google Ads, optimización.</p>
+          </article>
+          <article class="card team">
+            <div class="avatar" aria-hidden="true"></div>
+            <h3>Content</h3>
+            <p class="muted">Guiones, producción, dirección.</p>
+          </article>
+          <article class="card team">
+            <div class="avatar" aria-hidden="true"></div>
+            <h3>Editor</h3>
+            <p class="muted">Edición, motion, estilo.</p>
+          </article>
+          <article class="card team">
+            <div class="avatar" aria-hidden="true"></div>
+            <h3>Community</h3>
+            <p class="muted">Gestión, protocolos, insights.</p>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Opcional:</strong> Si quieres poner fotos, cambia cada <code>.avatar</code> por una imagen
+          o usa CSS con <code>background-image</code>.
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="cta card">
+          <div>
+            <h2>¿Quieres que tu contenido y tus anuncios traigan clientes?</h2>
+            <p class="muted">
+              Agenda una auditoría rápida. Te diremos qué optimizar en contenido, pauta y community
+              para mejorar resultados en 7–14 días.
+            </p>
+
+            <div class="cta__links">
+              <!-- Cambia TU_NUMERO por tu WhatsApp -->
+              <a class="btn" href="https://wa.me/TU_NUMERO?text=Hola%20Visualize%20Studio%2C%20quiero%20una%20auditor%C3%ADa" target="_blank" rel="noreferrer">
+                WhatsApp
+              </a>
+              <!-- Cambia TU_EMAIL -->
+              <a class="btn btn--ghost" href="mailto:TU_EMAIL?subject=Auditor%C3%ADa%20Marketing%20-%20Visualize%20Studio">
+                Email
+              </a>
+              <!-- Cambia a tu Linktree o Calendly -->
+              <a class="link" href="#" aria-disabled="true">Calendly (opcional)</a>
+            </div>
+          </div>
+
+          <form class="form" onsubmit="return false;">
+            <label>
+              <span>Nombre</span>
+              <input type="text" placeholder="Tu nombre" />
+            </label>
+            <label>
+              <span>Negocio</span>
+              <input type="text" placeholder="Ej: ecommerce, restaurante..." />
+            </label>
+            <label>
+              <span>¿Qué necesitas?</span>
+              <select>
+                <option>Contenido</option>
+                <option>Ads</option>
+                <option>Community Management</option>
+                <option>Contenido + Ads</option>
+                <option>Todo (full)</option>
+              </select>
+            </label>
+            <button class="btn btn--full" id="copyLeadBtn">Copiar mensaje para WhatsApp</button>
+            <small class="muted">Este formulario no envía datos (para GitHub Pages). Copia el mensaje y lo pegas en WhatsApp.</small>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <strong>Visualize Studio</strong>
+          <div class="muted">Contenido • Ads • Community</div>
+        </div>
+        <div class="footer__links">
+          <a href="#inicio">Inicio</a>
+          <a href="#casos">Casos</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
