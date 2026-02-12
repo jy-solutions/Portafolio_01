@@ -442,42 +442,51 @@ h2{
   .nav__list.is-open{ display:flex; }
 }
 
-/* ===== Logo fondo borroso (fix) ===== */
+/* ===== Fondo logo borroso (final, a prueba de fallos) ===== */
 
 body{
   position: relative;
-  isolation: isolate; /* evita problemas de capas */
+  isolation: isolate; /* crea un contexto de capas seguro */
 }
 
 body::before{
   content:"";
   position: fixed;
   inset: 0;
+
+  /* logo borroso */
   background: url("../img/logo.jpg") center/520px no-repeat;
-  opacity: 0.30;
+
+  opacity: 0.12;
   filter: blur(60px);
-  z-index: 0;          /* <- NO negativo */
+
+  /* Importante: NO usar z-index negativo */
+  z-index: 0;
   pointer-events: none;
+
+  /* Truco: mejora compatibilidad y hace que se renderice siempre */
+  transform: translateZ(0);
 }
 
 body::after{
   content:"";
   position: fixed;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(179,92,255,0.15), transparent 70%);
-  z-index: 0;          /* <- NO negativo */
+
+  /* glow morado */
+  background: radial-gradient(circle at center, rgba(179, 92, 255, 0.18), transparent 70%);
+
+  z-index: 0;
   pointer-events: none;
 }
 
-/* Mantén el contenido por encima del fondo */
-.header,
-.hero,
-.section,
-.footer{
+/* Asegura que todo el contenido quede por encima */
+header, main, footer, .header, .hero, .section, .footer{
   position: relative;
   z-index: 1;
 }
 
+/* Móvil */
 @media (max-width: 768px){
   body::before{
     background-size: 320px;
