@@ -441,3 +441,43 @@ h2{
   }
   .nav__list.is-open{ display:flex; }
 }
+
+/* ===== Logo fondo borroso premium ===== */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: url("../img/logo.jpg") center / 520px no-repeat;
+
+  opacity: 0.10;
+  filter: blur(60px);
+
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Glow adicional para estilo tech */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(179, 92, 255, 0.15),
+    transparent 60%
+  );
+
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* Ajuste para móvil */
+@media (max-width: 768px) {
+  body::before {
+    background-size: 320px;
+    filter: blur(50px);
+  }
+}
